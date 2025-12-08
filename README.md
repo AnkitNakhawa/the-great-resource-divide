@@ -4,13 +4,23 @@ A data visualization campaign highlighting inequitable school funding and resour
 
 ## Overview
 
-This project visualizes the stark disparities in educational resources between wealthy and under-resourced schools. Through interactive data visualizations, we demonstrate how funding inequalities affect:
+This project visualizes the stark disparities in educational resources between wealthy and under-resourced schools. Through interactive data visualizations and an interactive map, we demonstrate how funding inequalities affect:
 
 - **Per-pupil spending** - Wealthy schools receive over 2.5x more funding per student
 - **Teacher experience** - More experienced educators concentrated in well-funded schools
 - **AP course availability** - Advanced learning opportunities limited in under-resourced areas
 - **Extracurricular programs** - Significant gaps in enrichment activities
 - **Student outcomes** - Direct correlation between funding and graduation rates
+
+### Features
+
+1. **Main Dashboard** - Comparative visualizations showing average disparities between wealthy and under-resourced schools
+2. **Interactive Map** - Real data on 20 underfunded school districts across America, with:
+   - Detailed funding gap information for each district
+   - Per-pupil spending data
+   - Student demographics
+   - Direct links to authoritative data sources
+   - Coverage of districts in TX, CT, NY, AL, MS, TN, LA, FL, AZ, OK, NV, and NM
 
 ## The Issue
 
@@ -34,7 +44,9 @@ Let your local, state, and federal representatives know that equitable school fu
 
 - **Next.js** - React framework for production
 - **TypeScript** - Type-safe development
-- **Recharts** - Data visualization library
+- **Recharts** - Chart and data visualization library
+- **Leaflet** - Interactive map library
+- **React Leaflet** - React components for Leaflet maps
 - **Tailwind CSS** - Utility-first CSS framework
 
 ## Getting Started
@@ -82,27 +94,46 @@ Alternatively, deploy with one click:
 the-great-resource-divide/
 ├── app/
 │   ├── layout.tsx          # Root layout
-│   ├── page.tsx            # Home page
+│   ├── page.tsx            # Home page (main dashboard)
+│   ├── map/
+│   │   └── page.tsx        # Interactive map page
 │   └── globals.css         # Global styles
 ├── components/
 │   ├── SpendingComparison.tsx      # Per-pupil spending chart
 │   ├── TeacherExperience.tsx       # Teacher experience chart
 │   ├── OpportunitiesComparison.tsx # AP & extracurricular chart
-│   └── OutcomesComparison.tsx      # Graduation & class size chart
+│   ├── OutcomesComparison.tsx      # Graduation & class size chart
+│   └── SchoolMap.tsx               # Interactive Leaflet map
 ├── data/
-│   └── schoolData.ts       # Sample school data
-└── public/                 # Static assets
+│   ├── schoolData.ts               # Sample school data
+│   └── underfundedSchools.ts       # Real underfunded schools data
+└── public/                         # Static assets
 ```
 
 ## Data Sources
 
-The visualizations are based on data patterns from:
+### Main Dashboard
+
+The comparative visualizations are based on data patterns from:
 
 - National Center for Education Statistics (NCES)
 - EdBuild
 - The Education Trust
 
-*Note: The specific numbers shown are averaged examples created to illustrate systemic disparities. For local data, visit your state's Department of Education website.*
+*Note: The specific numbers shown on the main dashboard are averaged examples created to illustrate systemic disparities.*
+
+### Interactive Map
+
+The interactive map features real data on underfunded school districts from authoritative sources:
+
+- **[The Century Foundation](https://tcf.org/)** - Comprehensive analysis of school funding gaps
+- **[Education Law Center](https://edlawcenter.org/)** - "Making the Grade 2024" state-by-state funding reports
+- **[The Education Trust](https://stateofeducationfunding.org/)** - State of Funding Equity Data Tool
+- **[Rice University Kinder Institute](https://kinder.rice.edu/)** - Texas school district funding research
+- **[National Center for Education Statistics](https://nces.ed.gov/)** - Official U.S. Department of Education data
+- **[World Population Review](https://worldpopulationreview.com/)** - State-by-state education statistics
+
+All data points on the map are hyperlinked to their original sources for verification and further research.
 
 ## Contributing
 
