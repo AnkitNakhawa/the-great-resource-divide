@@ -1,0 +1,36 @@
+{
+  "name": "the-great-resource-divide",
+  "version": "1.0.0",
+  "description": "A data visualization campaign highlighting inequitable school funding and resource distribution",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnkitNakhawa/the-great-resource-divide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnkitNakhawa/the-great-resource-divide/issues"
+  },
+  "homepage": "https://github.com/AnkitNakhawa/the-great-resource-divide#readme",
+  "dependencies": {
+    "next": "^16.0.7",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "recharts": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17",
+    "typescript": "^5.9.3"
+  }
+}
