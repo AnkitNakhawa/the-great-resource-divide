@@ -17,6 +17,24 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Interactive Map CTA */}
+        <div className="bg-gradient-to-r from-red-500 to-orange-500 rounded-lg shadow-xl p-6 mb-8 text-white">
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <div>
+              <h2 className="text-2xl font-bold mb-2">Explore Real Underfunded Schools</h2>
+              <p className="text-sm opacity-90">
+                View an interactive map of actual school districts with abnormally low funding across America
+              </p>
+            </div>
+            <a
+              href="/map"
+              className="bg-white text-red-600 font-bold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
+            >
+              View Map →
+            </a>
+          </div>
+        </div>
+
         {/* Introduction */}
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">The Problem</h2>
@@ -93,7 +111,13 @@ export default function Home() {
             Data sources: National Center for Education Statistics, EdBuild, Education Trust
           </p>
           <p className="text-sm mt-2">
-            Note: Data shown represents averaged examples to illustrate systemic disparities.
+            Note: Data shown on this page represents averaged examples to illustrate systemic disparities.
+          </p>
+          <p className="text-sm mt-2">
+            For real school-level data with sources, visit the{' '}
+            <a href="/map" className="text-blue-600 hover:underline font-semibold">
+              Interactive Map
+            </a>
           </p>
         </div>
       </div>

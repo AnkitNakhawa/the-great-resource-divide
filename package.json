@@ -20,13 +20,16 @@
   },
   "homepage": "https://github.com/AnkitNakhawa/the-great-resource-divide#readme",
   "dependencies": {
+    "leaflet": "^1.9.4",
     "next": "^16.0.7",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
+    "react-leaflet": "^5.0.0",
     "recharts": "^3.5.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
+    "@types/leaflet": "^1.9.21",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "autoprefixer": "^10.4.22",
