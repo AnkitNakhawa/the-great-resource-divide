@@ -90,6 +90,34 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Data Disclaimer */}
+        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-8 rounded-lg shadow-md">
+          <div className="flex items-start">
+            <svg className="h-6 w-6 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd"/>
+            </svg>
+            <div>
+              <h3 className="text-lg font-bold text-yellow-800 mb-2">About the Data Below</h3>
+              <p className="text-sm text-gray-700 leading-relaxed mb-2">
+                <strong>The statistics shown in the graphs below are illustrative examples</strong> constructed to represent
+                well-documented patterns of educational inequality, not direct quotes from the cited sources. While the specific
+                numbers are aggregated for clarity, they are based on extensive research showing:
+              </p>
+              <ul className="text-sm text-gray-700 space-y-1 ml-4 list-disc">
+                <li>Wealthy districts receive significantly more funding per student than under-resourced districts</li>
+                <li>High-poverty schools have much higher rates of inexperienced and uncertified teachers</li>
+                <li>Low-income students have substantially less access to AP courses and extracurricular programs</li>
+                <li>Schools serving disadvantaged students have larger class sizes and lower graduation rates</li>
+              </ul>
+              <p className="text-sm text-gray-700 mt-3">
+                <strong>For verified, source-specific data:</strong> Visit our{' '}
+                <a href="/map" className="text-blue-600 hover:underline font-semibold">Interactive Map</a>
+                {' '}which displays real school districts with documented funding gaps and direct links to authoritative sources.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Visualizations */}
         <div className="space-y-8 mb-12">
           <SpendingComparison />
@@ -144,19 +172,32 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="mt-12 text-center text-gray-600">
-          <p className="text-sm">
-            Data sources: National Center for Education Statistics, EdBuild, Education Trust
+        <div className="mt-12 bg-gray-100 rounded-lg p-6 border border-gray-300">
+          <h3 className="text-sm font-bold text-gray-800 mb-3 text-center">Data Sources & Methodology</h3>
+          <p className="text-sm text-gray-700 mb-3 text-center">
+            The cited sources (Education Law Center, Learning Policy Institute, The Education Trust, and NCES) document
+            the patterns of educational inequality shown above. The specific numerical values in the graphs are illustrative
+            examples that represent these research findings, not direct statistical quotes.
           </p>
-          <p className="text-sm mt-2">
-            Note: Data shown on this page represents averaged examples to illustrate systemic disparities.
-          </p>
-          <p className="text-sm mt-2">
-            For real school-level data with sources, visit the{' '}
-            <a href="/map" className="text-blue-600 hover:underline font-semibold">
-              Interactive Map
-            </a>
-          </p>
+          <div className="text-center">
+            <p className="text-xs text-gray-600 mb-2">
+              <strong>Key Research Sources:</strong>
+            </p>
+            <p className="text-xs text-gray-600">
+              Baker, B. D., Farrie, D., & Sciarra, D. G. (2023). Education Law Center •
+              Carver-Thomas, D., & Darling-Hammond, L. (2024). Learning Policy Institute •
+              The Education Trust (2023). Funding Gaps Report •
+              National Center for Education Statistics (2024). Condition of Education
+            </p>
+          </div>
+          <div className="mt-4 pt-4 border-t border-gray-300 text-center">
+            <p className="text-sm text-gray-700">
+              <strong>For verified district-specific data with direct source links:</strong>{' '}
+              <a href="/map" className="text-blue-600 hover:underline font-semibold">
+                Visit the Interactive Map →
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </main>
