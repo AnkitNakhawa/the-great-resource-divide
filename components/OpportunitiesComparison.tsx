@@ -62,6 +62,12 @@ export default function OpportunitiesComparison() {
           </div>
         </div>
       </div>
+
+      <div className="mt-6 pt-4 border-t border-gray-200">
+        <p className="text-xs text-gray-500 leading-relaxed">
+          <strong>Source:</strong> The Education Trust. (2023). <em>Funding gaps 2023: An analysis of school funding equity across the U.S. and within each state</em>. https://edtrust.org/resource/funding-gaps-2023/
+        </p>
+      </div>
     </div>
   );
 }

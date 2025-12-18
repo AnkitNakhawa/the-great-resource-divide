@@ -41,6 +41,12 @@ export default function SpendingComparison() {
           <p className="text-2xl font-bold text-red-600">${aggregateData.underResourced.avgPerPupilSpending.toLocaleString()}</p>
         </div>
       </div>
+
+      <div className="mt-6 pt-4 border-t border-gray-200">
+        <p className="text-xs text-gray-500 leading-relaxed">
+          <strong>Source:</strong> Baker, B. D., Farrie, D., & Sciarra, D. G. (2023). <em>Is school funding fair? A national report card</em> (9th ed.). Education Law Center. https://edlawcenter.org/research/school-funding-fairness.html
+        </p>
+      </div>
     </div>
   );
 }

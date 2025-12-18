@@ -41,6 +41,12 @@ export default function TeacherExperience() {
           <p className="text-2xl font-bold text-orange-600">{aggregateData.underResourced.avgTeacherExperience} years</p>
         </div>
       </div>
+
+      <div className="mt-6 pt-4 border-t border-gray-200">
+        <p className="text-xs text-gray-500 leading-relaxed">
+          <strong>Source:</strong> Carver-Thomas, D., & Darling-Hammond, L. (2024). <em>Teacher turnover: Why it matters and what we can do about it</em>. Learning Policy Institute. https://learningpolicyinstitute.org/product/teacher-turnover-report
+        </p>
+      </div>
     </div>
   );
 }

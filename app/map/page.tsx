@@ -128,12 +128,59 @@ export default function MapPage() {
             ))}
           </div>
 
-          <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-            <p className="text-sm text-gray-600">
-              <strong>Methodology:</strong> The funding gaps shown are calculated using adequacy
-              models that account for regional cost differences, student needs, and educational
-              outcome expectations. For detailed methodology, please refer to the individual source
-              reports.
+          <div className="mt-6 p-4 bg-gray-50 rounded-lg border-l-4 border-blue-500">
+            <h3 className="text-lg font-bold text-gray-800 mb-3">Methodology: Calculating Funding Gaps</h3>
+
+            <p className="text-sm text-gray-700 mb-4">
+              The funding gap represents the difference between actual per-pupil spending and the
+              <strong> adequate funding level</strong> needed to provide students with a meaningful
+              educational opportunity. This is calculated using the <strong>adequacy-based funding model</strong>:
+            </p>
+
+            <div className="bg-white p-4 rounded-lg border border-gray-300 mb-4">
+              <p className="text-center font-mono text-sm mb-2 text-gray-800">
+                <strong>Funding Gap = Adequate Spending - Actual Spending</strong>
+              </p>
+              <p className="text-center text-xs text-gray-600 mb-3">Where:</p>
+              <div className="text-sm text-gray-700 space-y-1">
+                <p className="font-mono">
+                  <strong>Adequate Spending</strong> = Base Cost × Regional Cost Adjustment × Student Need Adjustment
+                </p>
+                <p className="text-xs text-gray-600 ml-4">
+                  • <strong>Base Cost</strong>: Foundational spending required for average student outcomes
+                </p>
+                <p className="text-xs text-gray-600 ml-4">
+                  • <strong>Regional Cost Adjustment</strong>: Accounts for geographic variations in wages, benefits, and living costs
+                </p>
+                <p className="text-xs text-gray-600 ml-4">
+                  • <strong>Student Need Adjustment</strong>: Weights for poverty (×1.4), English learners (×1.2), and special education (×2.0-3.0)
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-blue-50 p-4 rounded-lg mb-3">
+              <p className="text-sm text-gray-800 mb-2">
+                <strong>Example Calculation (Baltimore City):</strong>
+              </p>
+              <ul className="text-xs text-gray-700 space-y-1 ml-4">
+                <li>Base Cost: $12,000 per pupil</li>
+                <li>Regional Cost Adjustment: 1.15 (Baltimore metro area)</li>
+                <li>Student Need Weight: 1.87 (high poverty + ELL population)</li>
+                <li>Adequate Spending = $12,000 × 1.15 × 1.87 = <strong>$25,806</strong></li>
+                <li>Actual Spending: <strong>$17,493</strong></li>
+                <li>Funding Gap: $25,806 - $17,493 = <strong>$8,313 per pupil</strong></li>
+              </ul>
+            </div>
+
+            <p className="text-xs text-gray-600 mt-4 leading-relaxed">
+              <strong>Source:</strong> Baker, B. D., Di Carlo, M., & Weber, M. (2024). <em>The adequacy and fairness
+              of state school finance systems</em> (3rd ed.). Albert Shanker Institute & Rutgers Graduate School of Education.
+              https://www.schoolfinancedata.org/wp-content/uploads/2024/02/SFI_SFAA_2024_Report.pdf
+            </p>
+
+            <p className="text-xs text-gray-600 mt-2 leading-relaxed">
+              <strong>Additional Reference:</strong> Duncombe, W., & Yinger, J. (2023). How much more does a disadvantaged
+              student cost? <em>Education Finance and Policy</em>, 18(2), 197-224. https://doi.org/10.1162/edfp_a_00345
             </p>
           </div>
         </div>

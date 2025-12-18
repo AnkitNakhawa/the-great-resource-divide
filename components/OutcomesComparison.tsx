@@ -66,6 +66,12 @@ export default function OutcomesComparison() {
           <strong>Impact:</strong> Under-resourced schools have class sizes 2.5x larger and graduation rates 28% lower than wealthy schools.
         </p>
       </div>
+
+      <div className="mt-6 pt-4 border-t border-gray-200">
+        <p className="text-xs text-gray-500 leading-relaxed">
+          <strong>Source:</strong> National Center for Education Statistics. (2024). <em>The condition of education 2024</em>. U.S. Department of Education. https://nces.ed.gov/programs/coe/
+        </p>
+      </div>
     </div>
   );
 }
