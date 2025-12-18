@@ -22,12 +22,6 @@ export default function Home() {
         <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-xl shadow-2xl p-8 mb-8 text-white">
           <h2 className="text-3xl font-bold mb-4">Project Overview</h2>
           <div className="space-y-4 text-lg leading-relaxed">
-            <p>
-              This project invites you to take what you've learned about educational inequality and turn it into
-              public advocacy. It speaks to a real and urgent issue in public education and invites others to care,
-              think, and take action.
-            </p>
-
             <div className="bg-white/10 backdrop-blur rounded-lg p-5 space-y-3">
               <div>
                 <h3 className="font-bold text-xl mb-2">The Issue & Who Is Affected</h3>
